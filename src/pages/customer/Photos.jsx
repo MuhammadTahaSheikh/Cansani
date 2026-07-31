@@ -43,7 +43,7 @@ export default function CustomerPhotos() {
           {items.map((p) => (
             <Card key={p.id} className="overflow-hidden p-0">
               <img
-                src={p.url?.startsWith('http') ? p.url : `${import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:5000'}${p.url}`}
+                src={p.url?.startsWith('http') ? p.url : `${(import.meta.env.VITE_API_URL || 'https://api.cansani.com/api').replace(/\/api\/?$/, '')}${p.url}`}
                 alt={p.caption || 'Service photo'}
                 className="aspect-[4/3] w-full object-cover"
               />
