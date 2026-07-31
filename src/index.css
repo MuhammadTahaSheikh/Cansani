@@ -1,0 +1,369 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  /* Brand: sky blue + kelly green + navy — high-contrast defaults */
+  --color-charcoal: #0b1f4a;
+  --color-teal: #1a8fd4;
+  --color-teal-dark: #1472ab;
+  --color-teal-light: #3aa6e8;
+  --color-mint: #e8f6ff;
+  --color-mint-soft: #f3faff;
+  --color-sand: #eef7ef;
+  --color-sand-deep: #d4ebd6;
+  --color-cream: #f7fbfd;
+  --color-surface: #ffffff;
+  --color-muted: #3d4f63;
+  --color-leaf: #2f9e3a;
+  --color-leaf-dark: #247a2d;
+  --color-leaf-light: #4caf50;
+  --color-bin-blue: #1a8fd4;
+  --color-bin-blue-lid: #145a8f;
+  --color-bin-green: #2f9e3a;
+  --color-bin-green-lid: #247a2d;
+}
+
+:root {
+  --brand-charcoal: #0b1f4a;
+  --brand-teal: #1a8fd4;
+  --brand-teal-dark: #1472ab;
+  --brand-teal-light: #3aa6e8;
+  --brand-mint: #e8f6ff;
+  --brand-mint-soft: #f3faff;
+  --brand-sand: #eef7ef;
+  --brand-sand-deep: #d4ebd6;
+  --brand-cream: #f7fbfd;
+  --brand-white: #ffffff;
+  --brand-muted: #3d4f63;
+  --brand-leaf: #2f9e3a;
+  --glass-bg: rgba(255, 255, 255, 0.92);
+  --glass-border: rgba(11, 31, 74, 0.1);
+  --glass-shadow: 0 8px 28px rgba(11, 31, 74, 0.1);
+  --page-bg: #f7fbfd;
+  --text-primary: #0b1f4a;
+  --text-secondary: #3d4f63;
+  --surface: #ffffff;
+  --border: rgba(11, 31, 74, 0.1);
+}
+
+.dark {
+  --glass-bg: rgba(8, 20, 40, 0.92);
+  --glass-border: rgba(232, 246, 255, 0.12);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --page-bg: #07111c;
+  --text-primary: #f3faff;
+  --text-secondary: #b7c9da;
+  --surface: #0c1e32;
+  --border: rgba(232, 246, 255, 0.12);
+  --color-muted: #b7c9da;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: var(--font-sans);
+  background: var(--page-bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: clip;
+}
+
+/* Don't set height:auto here — it overrides Tailwind h-* utilities (unlayered CSS wins) */
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Ensure muted text always tracks theme contrast */
+.text-muted {
+  color: var(--text-secondary) !important;
+}
+
+.container-page {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: max(1rem, env(safe-area-inset-left, 0px))
+    max(1rem, env(safe-area-inset-right, 0px));
+}
+
+@media (min-width: 480px) {
+  .container-page {
+    padding-inline: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-page {
+    padding-inline: 1.75rem;
+  }
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(11, 31, 74, 0.1);
+  box-shadow: 0 12px 40px rgba(11, 31, 74, 0.1);
+}
+
+.dark .glass-strong {
+  background: rgba(12, 30, 50, 0.96);
+  border-color: rgba(232, 246, 255, 0.12);
+}
+
+.section-pad {
+  padding-block: 3.25rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-block: 6rem;
+  }
+}
+
+/* Horizontal scroll tables without breaking the page */
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+
+.safe-pb {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+}
+
+.safe-bottom {
+  bottom: max(1.25rem, env(safe-area-inset-bottom, 0px));
+}
+
+.gradient-mesh {
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(26, 143, 212, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(47, 158, 58, 0.1), transparent),
+    radial-gradient(ellipse 50% 30% at 50% 90%, rgba(232, 246, 255, 0.55), transparent),
+    var(--page-bg);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(26, 143, 212, 0.4);
+  border-radius: 999px;
+}
+
+::selection {
+  background: rgba(26, 143, 212, 0.28);
+  color: var(--brand-charcoal);
+}
+
+/* ── Wheelie-bin pricing cards ── */
+.bin-pricing {
+  perspective: 900px;
+}
+
+.bin-card {
+  position: relative;
+  width: 100%;
+  max-width: min(260px, 100%);
+  margin-inline: auto;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .bin-card:hover {
+    transform: translateY(-10px) scale(1.02);
+  }
+}
+
+.bin-card--featured {
+  max-width: min(280px, 100%);
+  z-index: 2;
+}
+
+@media (min-width: 1024px) {
+  .bin-card--featured {
+    transform: scale(1.06);
+  }
+  .bin-card--featured:hover {
+    transform: scale(1.08) translateY(-10px);
+  }
+}
+
+.bin-lid {
+  position: relative;
+  height: 28px;
+  margin: 0 6%;
+  border-radius: 10px 10px 4px 4px;
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.35),
+    0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.bin-lid::before,
+.bin-lid::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  width: 14px;
+  height: 18px;
+  border-radius: 4px;
+  background: inherit;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.bin-lid::before {
+  left: -10px;
+}
+
+.bin-lid::after {
+  right: -10px;
+}
+
+.bin-lid-shine {
+  position: absolute;
+  inset: 3px 18% auto;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+}
+
+.bin-body {
+  position: relative;
+  margin-top: -2px;
+  padding: 1.15rem 1rem 1.35rem;
+  clip-path: polygon(4% 0%, 96% 0%, 100% 4%, 92% 100%, 8% 100%, 0% 4%);
+  border-radius: 0 0 18px 18px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  box-shadow:
+    inset 8px 0 16px rgba(255, 255, 255, 0.12),
+    inset -10px 0 20px rgba(0, 0, 0, 0.12),
+    inset 0 12px 18px rgba(255, 255, 255, 0.08);
+}
+
+@media (min-width: 640px) {
+  .bin-body {
+    padding: 1.35rem 1.1rem 1.5rem;
+    min-height: 380px;
+  }
+}
+
+.bin-body--blue {
+  background: linear-gradient(160deg, #3aa6e8 0%, #1a8fd4 42%, #1472ab 100%);
+}
+
+.bin-body--green {
+  background: linear-gradient(160deg, #4caf50 0%, #2f9e3a 42%, #247a2d 100%);
+}
+
+.bin-lid--blue {
+  background: linear-gradient(180deg, #1a6aa8 0%, #145a8f 100%);
+}
+
+.bin-lid--green {
+  background: linear-gradient(180deg, #2f9e3a 0%, #247a2d 100%);
+}
+
+.bin-shadow {
+  width: 78%;
+  height: 18px;
+  margin: 0.65rem auto 0;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(11, 31, 74, 0.22), transparent 70%);
+  filter: blur(2px);
+}
+
+.bin-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.45);
+  margin-block: 0.65rem;
+}
+
+.bin-select {
+  width: 100%;
+  appearance: none;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%230b1f4a' d='M6 8L0 0h12z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+  color: #0b1f4a;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.55rem 2rem 0.55rem 0.85rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.bin-cta {
+  margin-top: auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  color: #0b1f4a;
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.bin-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
