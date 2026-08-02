@@ -5,19 +5,9 @@ import afterBinInside from '@/assets/after-bin-inside.png'
 
 export const PLANS = [
   {
-    id: 'monthly',
-    name: 'Monthly',
-    price: 29.99,
-    period: 'per month',
-    description: 'Bins Cleaned Once Per Month',
-    washesLabel: '12 Washes Per Year',
-    features: ['1–2 bins included', 'Eco-friendly wash', 'Photo report', 'Flexible skip'],
-    popular: false,
-  },
-  {
     id: 'biweekly',
     name: 'Bi-Weekly',
-    price: 24.99,
+    price: 29,
     period: 'per clean',
     description: 'Bins Cleaned Every 2 Weeks',
     washesLabel: '26 Washes Per Year',
@@ -25,9 +15,19 @@ export const PLANS = [
     popular: true,
   },
   {
+    id: 'monthly',
+    name: 'Monthly',
+    price: 39,
+    period: 'per month',
+    description: 'Bins Cleaned Once Per Month',
+    washesLabel: '12 Washes Per Year',
+    features: ['1–2 bins included', 'Eco-friendly wash', 'Photo report', 'Flexible skip'],
+    popular: false,
+  },
+  {
     id: 'quarterly',
     name: 'Quarterly',
-    price: 49.99,
+    price: 49,
     period: 'per quarter',
     description: 'Bins Cleaned Every 3 Months',
     washesLabel: '4 Washes Per Year',
@@ -37,7 +37,7 @@ export const PLANS = [
   {
     id: 'onetime',
     name: 'One-Time',
-    price: 39.99,
+    price: 69,
     period: 'per bin',
     description: 'Single Sparkling Clean',
     washesLabel: '1 Wash — Anytime',

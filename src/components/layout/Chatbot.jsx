@@ -5,7 +5,7 @@ import { COMPANY } from '@/data/content'
 
 const replies = [
   `Hi! I'm CanSani Assist. We clean trash bins across Lakewood Ranch, Florida. Ask about pricing, areas, or booking.`,
-  `Our popular Bi-Weekly plan is $24.99 per clean. Monthly is $29.99. Want me to point you to Book Now?`,
+  `Our popular Bi-Weekly plan is $29 per clean. Monthly is $39. Want me to point you to Book Now?`,
   `We serve Lakewood Ranch plus Sarasota, Bradenton, University Park, Palmer Ranch, Parrish, and more. Enter your address on /book to confirm.`,
   `You can reach us at ${COMPANY.phone} or book online in under 5 minutes.`,
 ]

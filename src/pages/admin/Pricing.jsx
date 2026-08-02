@@ -13,7 +13,7 @@ import api from '@/lib/api'
 const empty = {
   name: '',
   plan_type: 'biweekly',
-  price_per_bin: 24.99,
+  price_per_bin: 29,
   description: '',
   is_active: 1,
   is_popular: 0,

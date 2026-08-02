@@ -53,7 +53,7 @@ export default function Checkout() {
     setLoading(true)
     try {
       const intentRes = await api.post('/payments/create-intent', {
-        amount: plan?.price || 29.99,
+        amount: plan?.price || 29,
       }).catch(() => null)
 
       const payment_intent_id =
