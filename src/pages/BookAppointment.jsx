@@ -71,11 +71,11 @@ export default function BookAppointment() {
 
   return (
     <>
-      <SEO title="Book Appointment" description="Book CanSani trash bin cleaning in Lakewood Ranch, FL." path="/book" />
+      <SEO title="Book Appointment" description="Book Can Sani trash can cleaning in Lakewood Ranch, FL." path="/book" />
       <section className="section-pad gradient-mesh">
         <div className="container-page max-w-2xl">
-          <h1 className="font-display text-2xl font-bold md:text-4xl sm:text-3xl">Book CanSani</h1>
-          <p className="mt-2 text-sm text-muted">Sparkling bins in a few guided steps.</p>
+          <h1 className="font-display text-2xl font-bold md:text-4xl sm:text-3xl">Book Can Sani</h1>
+          <p className="mt-2 text-sm text-muted">A clean can in a few guided steps.</p>
 
           {step < STEPS.length - 1 && (
             <div className="mt-6 flex gap-1 overflow-x-auto pb-2">

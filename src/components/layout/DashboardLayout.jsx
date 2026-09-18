@@ -34,6 +34,7 @@ import { useAuthStore } from '@/store/authStore'
 import { useThemeStore } from '@/store/themeStore'
 import ScrollToTop from './ScrollToTop'
 import { cn } from '@/lib/utils'
+import BrandLogo, { BrandWordmark } from '@/components/BrandLogo'
 
 const customerNav = [
   { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard, end: true },
@@ -109,8 +110,9 @@ export default function DashboardLayout() {
         )}
       >
         <div className="flex items-center justify-between px-5 py-5">
-          <Link to="/" className="font-display text-lg font-bold">
-            Can<span className="text-teal">Sani</span>
+          <Link to="/" className="flex items-center gap-2">
+            <BrandLogo variant="icon" className="h-9 w-9 rounded-md bg-white p-0.5" />
+            <BrandWordmark className="text-lg" />
           </Link>
           <button type="button" className="lg:hidden" onClick={() => setSidebarOpen(false)}>
             <X size={18} />

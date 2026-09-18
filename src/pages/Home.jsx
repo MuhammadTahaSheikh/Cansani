@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <SEO
         title="Home"
-        description="CanSani premium trash bin cleaning in Lakewood Ranch, FL. Sparkling bins. Spotless curb appeal."
+        description={`${COMPANY.name} eco-friendly trash can cleaning in Lakewood Ranch, FL. ${COMPANY.tagline}`}
         path="/"
       />
       <Hero />
@@ -34,16 +34,18 @@ export default function Home() {
       <FAQPreview />
       <ServiceAreaMap />
       <section className="section-pad relative overflow-hidden text-center text-white">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0b1f4a] via-[#1468a8] to-[#2e8b36]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-teal to-leaf-dark" />
         <div className="absolute inset-0 opacity-30"
           style={{
             background:
-              'radial-gradient(ellipse 60% 50% at 20% 80%, rgba(91,184,240,0.45), transparent), radial-gradient(ellipse 50% 40% at 85% 20%, rgba(91,200,95,0.35), transparent)',
+              'radial-gradient(ellipse 60% 50% at 20% 80%, rgba(122,229,201,0.45), transparent), radial-gradient(ellipse 50% 40% at 85% 20%, rgba(79,165,70,0.35), transparent)',
           }}
         />
         <div className="container-page relative">
-          <h2 className="font-display text-3xl font-bold md:text-4xl">Ready for a sparkling curb?</h2>
-          <p className="mx-auto mt-3 max-w-lg text-white/75">{COMPANY.tagline}</p>
+          <h2 className="font-display text-3xl font-extrabold uppercase tracking-tight md:text-4xl">
+            Ready for a clean can?
+          </h2>
+          <p className="mx-auto mt-3 max-w-lg text-white/80">{COMPANY.tagline}</p>
           <div className="mt-8 flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center">
             <Link to="/book" className="w-full sm:w-auto">
               <Button size="lg" variant="sand" className="w-full shadow-lg sm:w-auto">

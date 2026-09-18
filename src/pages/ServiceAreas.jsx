@@ -7,7 +7,7 @@ import { SERVICE_AREAS } from '@/data/content'
 export default function ServiceAreas() {
   return (
     <>
-      <SEO title="Service Areas" description="CanSani serves Lakewood Ranch, FL and nearby communities." path="/service-areas" />
+      <SEO title="Service Areas" description="Can Sani serves Lakewood Ranch, FL and nearby communities." path="/service-areas" />
       <section className="section-pad gradient-mesh">
         <div className="container-page">
           <h1 className="font-display text-4xl font-bold md:text-5xl">Service areas</h1>

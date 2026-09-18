@@ -111,7 +111,7 @@ export default function CheckAreaStep({ data, onChange, onNext, onBack }) {
           <div>
             <p className="font-semibold">You are in our service area</p>
             <p className="text-sm opacity-80">
-              {areaName ? `${areaName} — ` : ''}CanSani serves your neighborhood.
+              {areaName ? `${areaName} — ` : ''}Can Sani serves your neighborhood.
             </p>
           </div>
         </div>

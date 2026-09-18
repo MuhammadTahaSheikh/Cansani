@@ -7,7 +7,7 @@ import { useAuthStore } from '@/store/authStore'
 import { useThemeStore } from '@/store/themeStore'
 import { COMPANY } from '@/data/content'
 import { cn } from '@/lib/utils'
-import logoImg from '@/assets/cansani.jpg'
+import BrandLogo, { BrandWordmark } from '@/components/BrandLogo'
 
 const links = [
   { to: '/services', label: 'Services' },
@@ -58,14 +58,11 @@ export default function Header() {
     >
       <div className="container-page flex items-center gap-3 lg:gap-4">
         <Link to="/" className="flex shrink-0 items-center gap-2" onClick={close}>
-          <img
-            src={logoImg}
-            alt="CanSani"
-            className="h-9 w-9 shrink-0 rounded-md object-contain bg-white p-0.5 shadow-sm sm:h-10 sm:w-10"
+          <BrandLogo
+            variant="icon"
+            className="h-11 w-11 shrink-0 rounded-lg bg-white p-0.5 shadow-sm sm:h-12 sm:w-12"
           />
-          <span className="font-display text-lg font-bold tracking-tight text-charcoal sm:text-xl dark:text-white">
-            Can<span className="text-leaf">Sani</span>
-          </span>
+          <BrandWordmark className="text-base sm:text-xl" />
         </Link>
 
         <nav className="hidden flex-1 items-center justify-center gap-0.5 lg:flex xl:gap-1">

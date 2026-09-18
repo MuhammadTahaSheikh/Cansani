@@ -88,7 +88,7 @@ export default function PricingCards() {
             Choose One Of Our Cleaning Options
           </h2>
           <p className="mt-3 text-muted">
-            Pick a cadence, select how many bins, and we&apos;ll keep your curb sparkling.
+            Pick a cadence, select how many bins, and we&apos;ll keep your cans clean.
           </p>
         </motion.div>
 

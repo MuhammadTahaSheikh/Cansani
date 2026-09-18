@@ -1,11 +1,12 @@
 import { Helmet } from 'react-helmet-async'
+import { COMPANY } from '@/data/content'
 
 export default function SEO({
   title,
-  description = 'CanSani — Premium trash bin cleaning in Lakewood Ranch, FL. Sparkling bins. Spotless curb appeal.',
+  description = `${COMPANY.name} — eco-friendly professional trash can cleaning in Lakewood Ranch, FL. ${COMPANY.tagline}`,
   path = '',
 }) {
-  const fullTitle = title ? `${title} | CanSani` : 'CanSani | Sparkling Bins. Spotless Curb Appeal.'
+  const fullTitle = title ? `${title} | ${COMPANY.name}` : `${COMPANY.name} | ${COMPANY.tagline}`
   return (
     <Helmet>
       <title>{fullTitle}</title>

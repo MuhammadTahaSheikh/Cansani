@@ -4,6 +4,7 @@ import toast from 'react-hot-toast'
 import SEO from '@/components/layout/SEO'
 import Input from '@/components/ui/Input'
 import Button from '@/components/ui/Button'
+import BrandLogo from '@/components/BrandLogo'
 import api from '@/lib/api'
 import { useAuthStore } from '@/store/authStore'
 
@@ -54,9 +55,10 @@ export default function Login() {
       <SEO title="Log in" path="/login" />
       <section className="section-pad gradient-mesh">
         <div className="container-page max-w-md">
-          <div className="rounded-3xl border border-charcoal/8 bg-white p-5 shadow-lg sm:p-8 dark:border-mint/10 dark:bg-[#0c1e32]">
+          <div className="rounded-3xl border border-charcoal/8 bg-white p-5 shadow-lg sm:p-8 dark:border-mint/10 dark:bg-[#0c283c]">
+            <BrandLogo variant="icon" className="mb-4 h-16 w-16" />
             <h1 className="font-display text-2xl font-bold sm:text-3xl">Log in</h1>
-            <p className="mt-2 text-sm text-muted">Access your CanSani account.</p>
+            <p className="mt-2 text-sm text-muted">Access your Can Sani account.</p>
             <form onSubmit={submit} className="mt-6 space-y-4">
               <Input
                 label="Email"

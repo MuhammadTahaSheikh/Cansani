@@ -4,6 +4,7 @@ import toast from 'react-hot-toast'
 import SEO from '@/components/layout/SEO'
 import Input from '@/components/ui/Input'
 import Button from '@/components/ui/Button'
+import BrandLogo from '@/components/BrandLogo'
 import api from '@/lib/api'
 import { useAuthStore } from '@/store/authStore'
 
@@ -79,9 +80,10 @@ export default function Register() {
       <SEO title="Register" path="/register" />
       <section className="section-pad gradient-mesh">
         <div className="container-page max-w-md">
-          <div className="rounded-3xl border border-charcoal/8 bg-white p-5 shadow-lg sm:p-8 dark:border-mint/10 dark:bg-[#0c1e32]">
+          <div className="rounded-3xl border border-charcoal/8 bg-white p-5 shadow-lg sm:p-8 dark:border-mint/10 dark:bg-[#0c283c]">
+            <BrandLogo variant="icon" className="mb-4 h-16 w-16" />
             <h1 className="font-display text-2xl font-bold sm:text-3xl">Create account</h1>
-            <p className="mt-2 text-sm text-muted">Join CanSani for effortless bin care.</p>
+            <p className="mt-2 text-sm text-muted">Join Can Sani for effortless bin care.</p>
             <form onSubmit={submit} className="mt-6 space-y-4">
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <Input

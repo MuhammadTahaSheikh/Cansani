@@ -6,7 +6,7 @@ import Button from '@/components/ui/Button'
 export default function Referral() {
   return (
     <>
-      <SEO title="Referrals" description="Refer friends to CanSani and earn credits." path="/referral" />
+      <SEO title="Referrals" description="Refer friends to Can Sani and earn credits." path="/referral" />
       <section className="section-pad gradient-mesh">
         <div className="container-page max-w-3xl">
           <div className="text-center">
@@ -15,7 +15,7 @@ export default function Referral() {
             </div>
             <h1 className="mt-4 font-display text-4xl font-bold">Give $20, get $20</h1>
             <p className="mx-auto mt-3 max-w-xl text-muted">
-              Share CanSani with a neighbor. When they book their first clean, you both receive account credit.
+              Share Can Sani with a neighbor. When they book their first clean, you both receive account credit.
             </p>
           </div>
 

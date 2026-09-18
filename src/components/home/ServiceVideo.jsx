@@ -80,7 +80,7 @@ export default function ServiceVideo() {
                   <button
                     type="button"
                     onClick={startPlayback}
-                    className="absolute inset-0 flex items-center justify-center bg-[#0b1f4a]/35 transition hover:bg-[#0b1f4a]/25"
+                    className="absolute inset-0 flex items-center justify-center bg-charcoal/35 transition hover:bg-charcoal/25"
                     aria-label="Play service video"
                   >
                     <span className="flex h-16 w-16 items-center justify-center rounded-full bg-teal text-white shadow-xl shadow-teal/40 transition hover:scale-105 hover:bg-teal-light sm:h-20 sm:w-20">
@@ -91,7 +91,7 @@ export default function ServiceVideo() {
               </div>
             </div>
             <p className="mt-3 text-center text-xs text-white/45 sm:text-left">
-              Real CanSani service footage — press play to watch.
+              Real Can Sani service footage — press play to watch.
             </p>
           </motion.div>
         </div>

@@ -5,7 +5,7 @@ import Accordion from '@/components/ui/Accordion'
 export default function Pricing() {
   return (
     <>
-      <SEO title="Pricing" description="CanSani bin cleaning plans: Monthly, Bi-Weekly, Quarterly, and One-Time." path="/pricing" />
+      <SEO title="Pricing" description="Can Sani bin cleaning plans: Monthly, Bi-Weekly, Quarterly, and One-Time." path="/pricing" />
       <div className="pt-10">
         <div className="container-page text-center">
           <h1 className="font-display text-4xl font-bold md:text-5xl">Pricing</h1>

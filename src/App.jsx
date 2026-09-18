@@ -192,8 +192,8 @@ export default function App() {
             className: 'font-sans text-sm',
             style: {
               borderRadius: '16px',
-              background: '#0B1F1A',
-              color: '#F0FDFA',
+              background: '#123A58',
+              color: '#EEF3F4',
             },
           }}
         />

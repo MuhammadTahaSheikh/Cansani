@@ -10,7 +10,7 @@ export default function FAQPreview() {
         <div>
           <h2 className="font-display text-3xl font-bold md:text-4xl">Questions, answered</h2>
           <p className="mt-3 text-muted">
-            Everything you need to know before your first CanSani visit.
+            Everything you need to know before your first Can Sani visit.
           </p>
           <Link to="/faq" className="mt-6 inline-block">
             <Button variant="outline">View all FAQs</Button>

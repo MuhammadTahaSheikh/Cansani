@@ -24,8 +24,8 @@ export default function HowItWorks() {
     <section className="section-pad bg-white dark:bg-[#0c1e32]">
       <div className="container-page">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-display text-3xl font-bold md:text-4xl">How it works</h2>
-          <p className="mt-3 text-muted">Three simple steps to a cleaner curb.</p>
+          <h2 className="font-display text-3xl font-extrabold md:text-4xl">How it works</h2>
+          <p className="mt-3 text-muted">Three simple steps to a cleaner can — and a cleaner planet.</p>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {steps.map((s, i) => (

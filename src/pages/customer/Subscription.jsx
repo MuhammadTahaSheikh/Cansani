@@ -71,7 +71,7 @@ export default function CustomerSubscription() {
                   <p className="mt-1 text-sm text-muted">
                     {sub.next_service_date
                       ? `Next: ${formatDate(sub.next_service_date)}`
-                      : 'Cadence managed by CanSani'}
+                      : 'Cadence managed by Can Sani'}
                   </p>
                   {sub.price != null && (
                     <p className="mt-2 font-medium text-teal">{formatCurrency(sub.price)}</p>

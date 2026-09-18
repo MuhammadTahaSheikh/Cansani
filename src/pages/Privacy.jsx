@@ -12,7 +12,7 @@ const SECTIONS = [
   },
   {
     title: 'Sharing',
-    body: 'We share data with payment processors (Stripe), SMS/email providers, and map services only as needed to deliver CanSani. Technicians see job addresses assigned to them.',
+    body: 'We share data with payment processors (Stripe), SMS/email providers, and map services only as needed to deliver Can Sani. Technicians see job addresses assigned to them.',
   },
   {
     title: 'Retention & security',
@@ -27,7 +27,7 @@ const SECTIONS = [
 export default function Privacy() {
   return (
     <>
-      <SEO title="Privacy Policy" path="/privacy" description="CanSani privacy policy for Lakewood Ranch bin cleaning customers." />
+      <SEO title="Privacy Policy" path="/privacy" description="Can Sani privacy policy for Lakewood Ranch bin cleaning customers." />
       <section className="section-pad">
         <div className="container-page max-w-3xl">
           <h1 className="font-display text-4xl font-bold">Privacy Policy</h1>

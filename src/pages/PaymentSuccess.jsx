@@ -20,7 +20,7 @@ export default function PaymentSuccess() {
           </div>
           <h1 className="mt-5 font-display text-3xl font-bold md:text-4xl">You&apos;re all set</h1>
           <p className="mt-3 text-muted">
-            Thanks for booking with CanSani. A confirmation email is on the way.
+            Thanks for booking with Can Sani. A confirmation email is on the way.
           </p>
           <div className="mt-8 rounded-3xl border border-charcoal/8 bg-white p-6 text-left dark:border-mint/10 dark:bg-[#0c1e32]">
             {confirmationId && (

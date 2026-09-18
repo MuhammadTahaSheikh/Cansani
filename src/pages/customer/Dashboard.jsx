@@ -45,7 +45,7 @@ export default function CustomerDashboard() {
         <h1 className="font-display text-2xl font-bold md:text-3xl">
           Welcome back{user?.name ? `, ${user.name.split(' ')[0]}` : ''}
         </h1>
-        <p className="mt-1 text-sm text-muted">Your CanSani customer portal</p>
+        <p className="mt-1 text-sm text-muted">Your Can Sani customer portal</p>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">

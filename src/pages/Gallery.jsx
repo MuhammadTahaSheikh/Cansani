@@ -5,7 +5,7 @@ import { GALLERY } from '@/data/content'
 export default function Gallery() {
   return (
     <>
-      <SEO title="Gallery" description="Before and after CanSani trash bin cleaning photos." path="/gallery" />
+      <SEO title="Gallery" description="Before and after Can Sani trash can cleaning photos." path="/gallery" />
       <section className="pt-12">
         <div className="container-page text-center">
           <h1 className="font-display text-4xl font-bold md:text-5xl">Gallery</h1>

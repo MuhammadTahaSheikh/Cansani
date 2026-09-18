@@ -4,7 +4,7 @@ import { COMPANY } from '@/data/content'
 const SECTIONS = [
   {
     title: 'Services',
-    body: 'CanSani provides professional trash, recycling, and compost bin cleaning in covered Lakewood Ranch-area routes. Service is subject to weather, access, and bin placement at the curb.',
+    body: 'Can Sani provides professional trash, recycling, and compost bin cleaning in covered Lakewood Ranch-area routes. Service is subject to weather, access, and bin placement at the curb.',
   },
   {
     title: 'Bookings & subscriptions',
@@ -27,7 +27,7 @@ const SECTIONS = [
 export default function Terms() {
   return (
     <>
-      <SEO title="Terms of Service" path="/terms" description="CanSani terms of service for bin cleaning in Lakewood Ranch, FL." />
+      <SEO title="Terms of Service" path="/terms" description="Can Sani terms of service for bin cleaning in Lakewood Ranch, FL." />
       <section className="section-pad">
         <div className="container-page max-w-3xl">
           <h1 className="font-display text-4xl font-bold">Terms of Service</h1>

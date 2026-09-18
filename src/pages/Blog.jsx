@@ -34,7 +34,7 @@ export default function Blog() {
 
   return (
     <>
-      <SEO title="Blog" description="Tips and guides from CanSani on bin care and curb appeal." path="/blog" />
+      <SEO title="Blog" description="Tips and guides from Can Sani on bin care and curb appeal." path="/blog" />
       <section className="section-pad">
         <div className="container-page">
           <h1 className="font-display text-4xl font-bold md:text-5xl">Blog</h1>

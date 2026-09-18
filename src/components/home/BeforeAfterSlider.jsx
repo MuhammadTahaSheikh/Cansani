@@ -11,7 +11,7 @@ export default function BeforeAfterSlider({ pairs = GALLERY }) {
       <div className="container-page">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl font-bold md:text-4xl">Before & after</h2>
-          <p className="mt-3 text-muted">Drag to reveal the CanSani difference.</p>
+          <p className="mt-3 text-muted">Drag to reveal the Can Sani difference.</p>
         </div>
         <div className="mx-auto mt-10 max-w-3xl">
           <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl sm:aspect-[16/10]">

@@ -100,7 +100,7 @@ export const BLOG_POSTS = [
     date: '2026-06-12',
     image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
     category: 'Home Tips',
-    content: `Florida heat and humidity turn trash bins into odor factories. Regular professional cleaning protects your curb appeal, reduces pests, and keeps neighbors happy.\n\nCanSani uses hot water, high pressure, and eco-safe sanitizers so every cart looks and smells fresh again.`,
+    content: `Florida heat and humidity turn trash bins into odor factories. Regular professional cleaning protects your curb appeal, reduces pests, and keeps neighbors happy.\n\nCan Sani uses hot water, high pressure, and eco-safe sanitizers so every cart looks and smells fresh again.`,
   },
   {
     slug: 'eco-friendly-cleaning',
@@ -139,7 +139,7 @@ export const TESTIMONIALS = [
     name: 'Priya S.',
     area: 'Sarasota',
     rating: 5,
-    text: 'Worth every penny in July. CanSani is the only bin service I recommend to neighbors.',
+    text: 'Worth every penny in July. Can Sani is the only bin service I recommend to neighbors.',
   },
 ]
 
@@ -170,8 +170,12 @@ export const EXTRAS = [
 ]
 
 export const COMPANY = {
-  name: 'CanSani',
-  tagline: 'Sparkling bins. Spotless curb appeal.',
+  name: 'Can Sani',
+  tagline: 'A clean can. A cleaner planet.',
+  description:
+    'Can Sani provides eco-friendly, professional trash can cleaning services that eliminate germs, odors, and grime—keeping your home, business, community, and environment healthier and fresher.',
+  mission:
+    'We deliver professional, eco-friendly trash can cleaning services with care, integrity and a commitment to a healthier, cleaner world.',
   phone: '(941) 555-0199',
   phoneHref: 'tel:+19415550199',
   email: 'hello@cansani.com',

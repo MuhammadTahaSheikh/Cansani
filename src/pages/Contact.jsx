@@ -37,7 +37,7 @@ export default function Contact() {
 
   return (
     <>
-      <SEO title="Contact" description="Contact CanSani for quotes and support in Lakewood Ranch, FL." path="/contact" />
+      <SEO title="Contact" description="Contact Can Sani for quotes and support in Lakewood Ranch, FL." path="/contact" />
       <section className="section-pad">
         <div className="container-page grid gap-10 lg:grid-cols-2">
           <div>

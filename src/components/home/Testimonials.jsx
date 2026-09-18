@@ -6,7 +6,7 @@ export default function Testimonials() {
     <section className="section-pad gradient-mesh">
       <div className="container-page">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-display text-3xl font-bold md:text-4xl">Neighbors love CanSani</h2>
+          <h2 className="font-display text-3xl font-extrabold md:text-4xl">Neighbors love Can Sani</h2>
           <p className="mt-3 text-muted">Real stories from Lakewood Ranch households.</p>
         </div>
         <div className="mt-10 grid gap-5 md:grid-cols-3">

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { COMPANY } from '@/data/content'
 
 const replies = [
-  `Hi! I'm CanSani Assist. We clean trash bins across Lakewood Ranch, Florida. Ask about pricing, areas, or booking.`,
+  `Hi! I'm Can Sani Assist. We clean trash bins across Lakewood Ranch, Florida. Ask about pricing, areas, or booking.`,
   `Our popular Bi-Weekly plan is $29 per clean. Monthly is $39. Want me to point you to Book Now?`,
   `We serve Lakewood Ranch plus Sarasota, Bradenton, University Park, Palmer Ranch, Parrish, and more. Enter your address on /book to confirm.`,
   `You can reach us at ${COMPANY.phone} or book online in under 5 minutes.`,
@@ -49,7 +49,7 @@ export default function Chatbot() {
           >
             <div className="flex items-center justify-between bg-teal px-4 py-3 text-white">
               <div>
-                <p className="font-display text-sm font-semibold">CanSani Assist</p>
+                <p className="font-display text-sm font-semibold">Can Sani Assist</p>
                 <p className="text-xs text-white/80">Usually replies instantly</p>
               </div>
               <button type="button" onClick={() => setOpen(false)} aria-label="Close chat">
